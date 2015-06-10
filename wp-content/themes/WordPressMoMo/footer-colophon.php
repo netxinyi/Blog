@@ -172,7 +172,7 @@ echo '</div>';
 			echo $output;
 ?>			
 
-			<div style="margin-top:20px;">WordPress主题源自 <a href="http://www.wpmomo.com/">wpmomo</a></div>
+			<div style="margin-top:20px;">Powered by  <a href="http://www.wordpress.org/">WordPress</a></div>
 
 </div>
 
