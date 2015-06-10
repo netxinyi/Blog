@@ -1163,35 +1163,6 @@ function dmeng_post_meta(){
 }
 
 
-function dmeng_post_footer(){
-
-
-	global $post;
-
-	$post_excerpt = $post->post_excerpt ? $post->post_excerpt : $post->post_content;
-
-	$post_excerpt = str_replace(array("\t", "\r\n", "\r", "\n"), "", strip_tags($post_excerpt));
-
-	dmeng_vote_html('post', get_the_ID());
-
-	echo '
-
-	<div class="bdsharebuttonbox  col-sm-6 col-xs-12" style="margin-bottom:10px;"><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a>
-
-	<a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a>
-
-	<a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a>
-
-	<a title="分享到QQ好友" href="#" class="bds_sqq" data-cmd="sqq"></a><a title="分享到百度贴吧" href="#" class="bds_tieba" data-cmd="tieba"></a>
-
-	<a title="分享到腾讯朋友" href="#" class="bds_tqf" data-cmd="tqf"></a><a href="#" class="bds_more" data-cmd="more"></a><a class="bds_count" data-cmd="count"></a></div>
-
-	<script>window._bd_share_main = false;window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{}};' .
-
-		"with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>";
-
-
-}
 
 
 function wpmomo_breadcrumb_output($url, $name){
