@@ -168,7 +168,7 @@ echo '</div>';
 <?php
 			$output = sprintf('&copy; %s copyright <a href="%s">%s</a> ',date( 'Y', current_time( 'timestamp', 0 ) ),home_url('/'),get_bloginfo('name') );
 			$output .= '<br>';
-			$output .=__('All Rights Reserved. ','momo').'  <a href="http://www.miitbeian.gov.cn/">'.get_option('zh_cn_l10n_icp_num', '').'</a>'.' '.stripslashes(htmlspecialchars_decode($GLOBALS['dmeng_general_setting']['footer_code']));
+			$output .='  <a href="http://www.miitbeian.gov.cn/">'.get_option('zh_cn_l10n_icp_num', '').'</a>'.' '.stripslashes(htmlspecialchars_decode($GLOBALS['dmeng_general_setting']['footer_code']));
 			echo $output;
 ?>			
 
