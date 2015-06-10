@@ -250,17 +250,17 @@ $dmeng_general_setting = wp_parse_args($dmeng_general_setting, $dmeng_general_de
 
 function wpmomo_favicon(){
 
+//
+//	$default_favicon = get_template_directory_uri() . "/favicon.ico";
+//
+//
+//	$custom_favicon = get//_option('wpmomo_upload');
+//
+//
+//	$favicon = ( empty( $custom_favicon ) ) ? $default_favicon : $custom_favicon;
 
-	$default_favicon = get_template_directory_uri() . "/favicon.ico";
 
-
-	$custom_favicon = get_option('wpmomo_upload');
-
-
-	$favicon = ( empty( $custom_favicon ) ) ? $default_favicon : $custom_favicon;
-
-
-	echo '<link rel="shortcut icon" href="' . $favicon . '" title="Favicon" />';
+	echo '<link rel="shortcut icon" href="/favicon.ico" title="Favicon" />';
 
 
 }
