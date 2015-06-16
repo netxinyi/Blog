@@ -18,13 +18,13 @@
 define('DB_NAME', 'slog');
 
 /** MySQL数据库用户名 */
-define('DB_USER', 'root');
+define('DB_USER', 'blog');
 
 /** MySQL数据库密码 */
-define('DB_PASSWORD', '123456');
+define('DB_PASSWORD', 'qianqian12');
 
 /** MySQL主机 */
-define('DB_HOST', 'localhost');
+define('DB_HOST', '10.163.229.135');
 
 /** 创建数据表时默认的文字编码 */
 define('DB_CHARSET', 'utf8mb4');
