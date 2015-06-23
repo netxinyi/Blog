@@ -24,6 +24,7 @@ define('DB_USER', 'blog');
 define('DB_PASSWORD', 'qianqian12');
 
 /** MySQL主机 */
+
 define('DB_HOST', '114.215.135.10');
 
 /** 创建数据表时默认的文字编码 */

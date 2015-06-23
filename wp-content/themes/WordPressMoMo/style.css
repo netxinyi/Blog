@@ -2645,7 +2645,16 @@ li.L1, li.L3, li.L5, li.L7, li.L9 {
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
 }
-
+@media all {
+    .carousel-fade .carousel-inner{
+        min-height: 200px;
+    }
+}
+@media (max-width: 768px) {
+    .carousel-fade .carousel-inner{
+        min-height: 100px;
+    }
+}
 .carousel-fade .carousel-inner .item {
     opacity: 0;
     -webkit-transition-property: opacity;
